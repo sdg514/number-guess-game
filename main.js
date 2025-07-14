@@ -12,6 +12,7 @@ let computerNum = 0;
 let playButton = document.getElementById("play-button");
 let userInput = document.getElementById("userNum");
 let resultArea = document.getElementById("result-area");
+let resultAreaImg = document.querySelector(".main-img");
 let resetButton = document.getElementById("reset-button");
 let chances = 5;
 let gameOver = false;
@@ -44,15 +45,17 @@ function play(){
 
     chances -- ;
     chanceArea.textContent =`남은기회: ${chances}`;
-    console.log("chances", chances);
+    // console.log("chances", chances);
 
     if(userValue < computerNum){
+        resultAreaImg.src ="https://ppss.kr/wp-content/uploads/2018/03/0-121-540x281.jpg";
         resultArea.textContent = "Up!!!!"
-        // console.log("Up!!!!");
+
     }else if(userValue > computerNum){
+        resultAreaImg.src ="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fus.123rf.com%2F450wm%2Fsgame%2Fsgame1407%2Fsgame140700033%2F30151074-red-drop-down-arrow-isolated-on-white-background.jpg%3Fver%3D6&type=sc960_832";
         resultArea.textContent = "Down!!!!"
-        // console.log("Down!!");
     }else{
+        resultAreaImg.src ="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEyMTNfOTQg%2FMDAxNzM0MDg1NDYyMzg0.9KwUSf0UCDtXeZm8nUtMiqzNQioC-Np7qtzDaW4AnBEg.NZ9eONEzC2tYehSKAOvceMYs1HNoMvHAm7FtrWMwX7Ig.JPEG%2FIMG_6256.JPG&type=sc960_832";
         resultArea.textContent = "정답입니다!!!!"
         gameOver = true
     }
@@ -75,7 +78,7 @@ function reset(){
     // 새로운 번호 생성
     pinkRandomNum();
 
-    resultArea.textContent = "결과값이 여기에 나옵니다"
+    resultArea.textContent = "결과값이 여기에 나옵니다."
 }
 
 pinkRandomNum();

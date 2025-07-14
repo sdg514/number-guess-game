@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background: url(https://dimg.donga.com/wps/NEWS/IMAGE/2025/04/24/131479239.5.jpg) no-repeat 50%;
+    background-size: contain;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.flex{
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 1140px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px #000;
+    text-align: center;
+}
+
+    input{
+        
+    }
+    .flex11{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+        button{
+            padding: 20px 50px;
+            border-radius: 50px;
+        }
+
+        button:hover{
+            
+        }
+
+
+@media (max-width: 767px) {
+    /* 모바일 전용 스타일 */
+    
+}

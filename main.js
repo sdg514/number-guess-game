@@ -77,7 +77,7 @@ function reset(){
     userInput.value = "";
     // 새로운 번호 생성
     pinkRandomNum();
-
+    resultAreaImg.src ="https://cdn.psychiatricnews.net/news/photo/202104/30764_22125_3114.jpg";
     resultArea.textContent = "결과값이 여기에 나옵니다."
 }
 

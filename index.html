@@ -10,21 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="flex">
+    <div class="container">
         <h1 class="nanum-myeongjo-regular">동군이가<br/> 좋아하는<br/> 술게임!</h1>
-        <div id="result-area">
+        <div id="">
             <img src="https://cdn.psychiatricnews.net/news/photo/202104/30764_22125_3114.jpg" alt="이미지" class="main-img"/>
-            <h2 id="">결과값이 여기에 나옵니다.</h2>
+            <h2 id="result-area">Up and Down?</h2>
         </div>
         <h2 id="chance-area">남은기회: 5</h2>
 
-        <input type="number" id="userNum" aria-label="userNum" placeholder="1부터 100까지 숫자를 적으세요."/>
-
         <div class="flex1">
-            <button id="play-button" aria-label="Go버튼">Go!</button>
-            <button id="reset-button" aria-label="Reset버튼">리셋!</button>
+            <input type="number" id="userNum" aria-label="userNum" placeholder="1~100 숫자 적으세요."/>
+
+            <button id="play-button" class="button1" aria-label="Go버튼">Go!</button>
+
         </div>
-        <script src="./main.js"></script>
+        
     </div>
+    <button id="reset-button" class="button2" aria-label="Reset버튼">리셋!</button>
+
+    <script src="./main.js"></script>
 </body>
 </html>
